@@ -29,7 +29,6 @@ export default function Main({ navigation }) {
     if (getUsers) {
       setUsers(JSON.parse(getUsers));
     }
-    console.tron.log(getUsers);
   }
 
   useEffect(() => {
