@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { ActivityIndicator } from 'react-native';
 import PropTypes from 'prop-types';
 import api from '../../services/api';
 
@@ -9,6 +8,7 @@ import {
   Avatar,
   Name,
   Bio,
+  Loading,
   Stars,
   Starred,
   OwnerAvatar,
@@ -78,7 +78,7 @@ export default function User({ navigation }) {
       </Header>
 
       {loading ? (
-        <ActivityIndicator size="large" color="#7159c1" />
+        <Loading />
       ) : (
         <Stars
           data={stars}
