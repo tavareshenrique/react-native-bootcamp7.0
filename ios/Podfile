@@ -33,6 +33,8 @@ target 'reactnativebootcamp07' do
 
   pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
 
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
   target 'reactnativebootcamp07Tests' do
     inherit! :search_paths
     # Pods for testing
